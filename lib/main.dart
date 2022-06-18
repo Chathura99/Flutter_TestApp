@@ -82,12 +82,13 @@ class MyHomePage extends StatelessWidget {
           //  backgroundColor: Colors.pinkAccent,
           ),
           body: Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(5.0),
             child: TabBarView(
               children: [
                 tab1(),
                 Container(
-                  color: Color.fromARGB(255, 244, 77, 133),
+                  color: Color.fromARGB(96, 218, 216, 216),
+                  padding: EdgeInsets.symmetric(vertical: 20,horizontal: 50),
                   child:Text(
                     "Remove Student"
                   )
@@ -103,8 +104,47 @@ class MyHomePage extends StatelessWidget {
 }
 
 Widget tab1() {
-  return Center(
-    child: Text("Add new Student"),
+  return Column(
+    // mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    // crossAxisAlignment: CrossAxisAlignment.end,
+    children: [
+    Text("Add new Student"),
+    Text("List All"),
+    Text("Show Detail"),
+    Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+      IconButton(
+        icon: Icon(
+          Icons.facebook,
+          color:Colors.blue,
+          ),
+          onPressed: () {
+            //call method
+          },
+      ),
+      IconButton(
+        icon: Icon(
+          Icons.youtube_searched_for,
+          color:Colors.red,
+          ),
+          onPressed: () {
+            //call method
+          },
+      ),
+      IconButton(
+        icon: Icon(
+          Icons.whatsapp,
+          color:Colors.green,
+          ),
+          onPressed: () {
+            //call method
+          },
+      ),
+    ],
+    ),
+    ],
   );
 }
 
@@ -122,5 +162,7 @@ Widget tab1() {
 //     child: Image.asset("assets/me1.png"),
 // ),
 
-// bottom -> Tapbar
+// bottom -> Tabbar
 //add TabBarView after Appbar
+
+//Column
