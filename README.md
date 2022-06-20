@@ -6,4 +6,4 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
--to learn tab,row,container,tapbar,safeare,icon,scaffold
+To learn tab,row,container,tapbar,safeare,icon,scaffold
