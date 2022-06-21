@@ -85,7 +85,9 @@ class MyHomePage extends StatelessWidget {
             padding: EdgeInsets.all(5.0),
             child: TabBarView(
               children: [
+                //tab 1
                 tab1(),
+                //tab 2
                 Container(
                   color: Color.fromARGB(96, 218, 216, 216),
                   padding: EdgeInsets.symmetric(vertical: 20,horizontal: 50),
@@ -93,6 +95,7 @@ class MyHomePage extends StatelessWidget {
                     "Remove Student"
                   )
                 ),
+                //tab 3
                 Text("Update Student Details"),
               ],
             ),
